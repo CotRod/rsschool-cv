@@ -1,0 +1,39 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 200%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited,
+a:link {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+section {
+    flex: 1 1 20%;
+    border: 1px dotted red;
+    padding: 10px;
+}
+
+.header-picture {
+    flex: 1 1 20%;
+}
