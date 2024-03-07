@@ -2,6 +2,7 @@
     --text-color: #93CDDD;
     --neon-text-color: #40C0C0;
     --bg-color: #252525;
+    --label-bg-color: rgba(255, 255, 255, .3);
 }
 
 * {
@@ -87,7 +88,7 @@ p {
     position: absolute;
     inset: 130px -130px auto auto;
     transform: rotate(-90deg);
-    background-color: rgba(255, 255, 255, .3);
+    background-color: var(--label-bg-color);
     color: var(--bg-color);
     padding: 0 5px;
 }
@@ -102,6 +103,10 @@ p {
 section {
     flex: 1 1 20%;
     margin: 0 0 10px;
+}
+
+section > h3 {
+    text-align: center;
 }
 
 /* info >> */
@@ -123,6 +128,7 @@ section {
 
 .info_name {
     grid-area: name;
+    align-self: flex-end;
 }
 
 .info_english {
@@ -163,8 +169,13 @@ section {
     font-weight: 700;
 }
 
+.work-experience_companies {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .work-experience_companies > li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .work-experience_projects {
